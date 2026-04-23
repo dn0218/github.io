@@ -424,7 +424,7 @@
     </div>
     <div class="hero-desc">
       🔐 Passionate about building secure, automated, production-ready infrastructure.<br>
-      🧠 Modern container orchestration · rootless Podman · Systemd Quadlet · LVM automation · CCNP Enterprise track.
+      🧠 Modern container orchestration · rootless Podman · Systemd Quadlet · Ansible IaC · K3s lightweight Kubernetes.
     </div>
     <div class="btn-group">
       <a href="#projects" class="btn btn-primary"><i class="fab fa-github"></i> Explore Work</a>
@@ -439,15 +439,14 @@
       <span>🚀 About Me</span>
     </div>
     <div class="glass-card" style="padding: 1.8rem; margin-bottom: 2.5rem;">
-      <p style="margin-bottom: 1rem;">I'm a technical professional with telecommunications industry experience, specializing in <strong class="text-cyan">Network Engineering & Linux System Administration</strong> on RHEL-based environments. My recent focus lies in modern container orchestration using <strong>rootless Podman + Systemd Quadlet</strong>, combined with dynamic LVM storage automation — bridging traditional Linux administration with cloud-native practices.</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-        <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> RHCSA level (self-study) </span>
-        <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> CCNP Enterprise in progress </span>
-        <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> Zabbix multi-node monitoring </span>
-        <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> SELinux & firewalld hardening </span>
-      </div>
-      <p style="margin-top: 1.2rem;"><i class="fas fa-bullseye"></i> <strong>Goal:</strong> Become cross-domain expert in secure, automated Infrastructure, Networking, and Containerized Systems.</p>
-    </div>
+      <p style="margin-bottom: 1rem;">I'm a technical professional with telecommunications industry experience, specializing in <strong class="text-cyan">Network Engineering & Linux System Administration</strong> on RHEL-based environments. My recent focus lies in modern container orchestration using <strong>rootless Podman + Systemd Quadlet</strong>, combined with <strong>Ansible automation</strong> and <strong>K3s lightweight Kubernetes</strong> — bridging traditional Linux administration with cloud-native practices.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+  <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> RHCSA level (self-study) </span>
+  <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> Ansible Automation & K3s (in progress) </span>
+  <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> Zabbix multi-node monitoring </span>
+  <span><i class="fas fa-check-circle" style="color:#2dd4bf;"></i> SELinux & firewalld hardening </span>
+</div>
+<p style="margin-top: 1.2rem;"><i class="fas fa-bullseye"></i> <strong>Goal:</strong> Become cross-domain expert in secure, automated Infrastructure, Ansible-driven orchestration, K3s/Kubernetes, and Containerized Systems.</p>
   </section>
 
   <!-- Skills & Tools -->
@@ -460,8 +459,7 @@
       <div class="skill-category"><h3><i class="fab fa-linux"></i> OS & Core</h3><div class="skill-tags"><span class="skill-tag">RHEL 9 / Rocky</span><span class="skill-tag">Ubuntu Server</span><span class="skill-tag">Systemd</span><span class="skill-tag">SELinux</span></div></div>
       <div class="skill-category"><h3><i class="fas fa-cubes"></i> Containers</h3><div class="skill-tags"><span class="skill-tag">Rootless Podman</span><span class="skill-tag">Quadlet</span><span class="skill-tag">Podman Pods</span><span class="skill-tag">Containerfile</span></div></div>
       <div class="skill-category"><h3><i class="fas fa-database"></i> Storage & LVM</h3><div class="skill-tags"><span class="skill-tag">LVM (PV/VG/LV)</span><span class="skill-tag">XFS resize</span><span class="skill-tag">Dynamic extension</span><span class="skill-tag">xfs_growfs</span></div></div>
-      <div class="skill-category"><h3><i class="fas fa-network-wired"></i> Networking</h3><div class="skill-tags"><span class="skill-tag">VLANs / VPN</span><span class="skill-tag">OpenVPN</span><span class="skill-tag">FreePBX/VoIP</span><span class="skill-tag">CCNA level</span></div></div>
-      <div class="skill-category"><h3><i class="fas fa-chart-line"></i> Monitoring & Auto</h3><div class="skill-tags"><span class="skill-tag">Zabbix 6.4</span><span class="skill-tag">Prometheus/Grafana</span><span class="skill-tag">Bash scripting</span><span class="skill-tag">Systemd timers</span></div></div>
+      <div class="skill-category"><h3><i class="fas fa-network-wired"></i> Networking</h3><div class="skill-tags"><span class="skill-tag">VLANs / VPN</span><span class="skill-tag">OpenVPN</span><span class="skill-tag">FreePBX/VoIP</span><span class="skill-tag">K3s Networking (Flannel VXLAN, Klipper LB)</span></div></div>      <div class="skill-category"><h3><i class="fas fa-chart-line"></i> Monitoring & Auto</h3><div class="skill-tags"><span class="skill-tag">Ansible (IaC/Playbooks)</span><span class="skill-tag">Zabbix 6.4</span><span class="skill-tag">Prometheus/Grafana</span><span class="skill-tag">Bash scripting</span><span class="skill-tag">Systemd timers</span></div></div>
       <div class="skill-category"><h3><i class="fas fa-globe"></i> Web & Services</h3><div class="skill-tags"><span class="skill-tag">Nginx/Apache</span><span class="skill-tag">MariaDB/MySQL</span><span class="skill-tag">Rootless deployment</span></div></div>
     </div>
   </section>
@@ -502,6 +500,34 @@
         <a href="https://github.com/dn0218/Podman-Containerized-Web-Stack-with-LVM-Integration" target="_blank" class="project-link"><i class="fab fa-github"></i> Repository →</a>
       </div>
     </div>
+    <!-- Project 5 -->
+<div class="project-card">
+  <div class="project-title"><i class="fab fa-docker"></i> K3s Declarative Nginx Cluster — GitOps with SELinux</div>
+  <div class="project-desc">High-availability Nginx deployment on hybrid K3s cluster (RHEL 9.7 + Rocky 10.1). Zero-root execution, declarative GitOps workflow, and full SELinux compliance.</div>
+  <div class="project-tech"><span class="tech-badge">K3s</span><span class="tech-badge">SELinux</span><span class="tech-badge">GitOps</span><span class="tech-badge">Nginx</span></div>
+  <a href="https://github.com/dn0218/K3s-Declarative-Nginx-Cluster" target="_blank" class="project-link"><i class="fab fa-github"></i> Repository →</a>
+</div>
+<!-- Project 6 -->
+<div class="project-card">
+  <div class="project-title"><i class="fas fa-database"></i> Lightweight K3s Cluster on RHEL9 + External PostgreSQL</div>
+  <div class="project-desc">Production-hardened K3s cluster with external PostgreSQL datastore, Zabbix 7.0 via Helm, Klipper ServiceLB, and cross-node SELinux enforcement.</div>
+  <div class="project-tech"><span class="tech-badge">K3s</span><span class="tech-badge">PostgreSQL</span><span class="tech-badge">Helm</span><span class="tech-badge">Zabbix</span></div>
+  <a href="https://github.com/dn0218/Lightweight-K3s-Cluster-on-RHEL9-with-External-DB" target="_blank" class="project-link"><i class="fab fa-github"></i> Repository →</a>
+</div>
+<!-- Project 7 -->
+<div class="project-card">
+  <div class="project-title"><i class="fab fa-ansible"></i> AutoStack-Monitor — Ansible-Powered WordPress HA</div>
+  <div class="project-desc">One-click Ansible automation for highly available WordPress container stack across RHEL/Rocky/Ubuntu, using Podman Quadlet, NFS storage, and Zabbix/Grafana.</div>
+  <div class="project-tech"><span class="tech-badge">Ansible</span><span class="tech-badge">Podman Quadlet</span><span class="tech-badge">NFS</span><span class="tech-badge">WordPress</span></div>
+  <a href="https://github.com/dn0218/AutoStack-Monitor" target="_blank" class="project-link"><i class="fab fa-github"></i> Repository →</a>
+</div>
+<!-- Project 8 -->
+<div class="project-card">
+  <div class="project-title"><i class="fas fa-chart-line"></i> DRCOO — Distributed Rootless Container Orchestration & Observability</div>
+  <div class="project-desc">Infrastructure-as-Code project with Ansible, Podman Quadlet, and Prometheus/Grafana for rootless, observable container environment across RHEL 9 and Rocky 10.</div>
+  <div class="project-tech"><span class="tech-badge">Ansible</span><span class="tech-badge">Podman</span><span class="tech-badge">Prometheus</span><span class="tech-badge">Grafana</span></div>
+  <a href="https://github.com/dn0218/Distributed-Rootless-Container-Orchestration-Observability-DRCOO-" target="_blank" class="project-link"><i class="fab fa-github"></i> Repository →</a>
+</div>
 
     <!-- Other projects (Linux hardening, GlusterFS) -->
     <div class="other-projects">
@@ -523,22 +549,22 @@
       <span>🎓 Certifications & Learning Path</span>
     </div>
     <div class="cert-row">
-      <div class="cert-card">
-        <div><i class="fab fa-redhat" style="color:#e05d44;"></i> <strong>RHCSA</strong> (Red Hat Certified System Administrator)</div>
-        <div class="progress-bar"><div class="progress-fill" style="width: 78%;"></div></div>
-        <div>Self-study · Hands-on labs · Exam ready Q2 2026</div>
-      </div>
-      <div class="cert-card">
-        <div><i class="fas fa-network-wired"></i> <strong>CCNP Enterprise</strong> (ENCOR + ENARSI)</div>
-        <div class="progress-bar"><div class="progress-fill" style="width: 55%;"></div></div>
-        <div>Advanced routing, SD-WAN, automation · In progress</div>
-      </div>
-      <div class="cert-card">
-        <div><i class="fas fa-cloud-arrow-up"></i> <strong>Podman & Kubernetes</strong></div>
-        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
-        <div>Rootless expert, Quadlet, migration patterns</div>
-      </div>
-    </div>
+  <div class="cert-card">
+    <div><i class="fab fa-redhat" style="color:#e05d44;"></i> <strong>RHCSA</strong> (Red Hat Certified System Administrator)</div>
+    <div class="progress-bar"><div class="progress-fill" style="width: 78%;"></div></div>
+    <div>Self-study · Hands-on labs · Exam ready Q2 2026</div>
+  </div>
+  <div class="cert-card">
+    <div><i class="fab fa-ansible"></i> <strong>Ansible Automation</strong></div>
+    <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+    <div>IaC, playbooks, roles, AWX · In progress</div>
+  </div>
+  <div class="cert-card">
+    <div><i class="fas fa-cloud-arrow-up"></i> <strong>K3s / Kubernetes</strong></div>
+    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+    <div>Lightweight K8s, HA with external DB, GitOps</div>
+  </div>
+</div>
     <div style="margin-top: 1.2rem; background: #0f1c28; border-radius: 1rem; padding: 0.8rem 1.2rem; font-size: 0.9rem;">
       <i class="fas fa-microchip"></i> <strong>Currently deep diving:</strong> Advanced Podman/Quadlet patterns, RHEL storage & security, CCNP Enterprise technologies (OSPF, BGP, VPNs, automation).
     </div>
@@ -563,7 +589,7 @@
   </section>
 
   <footer>
-    <i class="fas fa-terminal"></i> Danny Hii Lu Hui — Linux System Administrator & Network Engineer · RHCSA Candidate<br>
+    <i class="fas fa-terminal"></i> Danny Hii Lu Hui — Linux System Administrator & Network Engineer · RHCSA · Ansible & K3s Enthusiast<br>
     <span style="font-size: 0.7rem;">✨ “Secure. Automated. Containerized.” — built with modern RHEL stack ✨</span>
   </footer>
 </div>
